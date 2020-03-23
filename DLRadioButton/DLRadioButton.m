@@ -147,8 +147,8 @@ static BOOL _groupModifing = NO;
     }
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsPopContext();
     UIGraphicsEndImageContext();
+    UIGraphicsPopContext();
 
     image.accessibilityIdentifier = kGeneratedIconName;
     return image;
